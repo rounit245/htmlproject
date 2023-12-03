@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .signup-box {
+      background-color: #e6e6fa; /* Light Purple */
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+    .background{
+        background-image: url("https://th.bing.com/th/id/R.5e7ad6de88e4ba70c08bea1fbd985279?rik=kdVQ6xYqb3jrvw&riu=http%3a%2f%2f717design.com%2fwp-content%2fuploads%2f2017%2f06%2flylecharles3-752x440.jpg&ehk=scHDjLQ8AXCSsUceVfTObmXEqAQagownEIL1inFQHiE%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1");
+        background-size: cover;
+        filter: blur(5px);
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        z-index: -1;
+    }
+  </style>
+</head>
+<body>
+    <div class="background"></div>
+  <div class="signup-box">
+    <h1>Sign Up</h1>
+    <form>
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" required placeholder="Enter you first name">
+
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" required placeholder="Enter Last Name">
+
+      <label for="email">Email ID:</label>
+      <input type="email" id="email" name="email" required placeholder="Enter Email ID">
+
+      <label for="mobileNumber">Mobile Number:</label>
+      <input type="tel" id="mobileNumber" name="mobileNumber" required placeholder="Mobile Number">
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required placeholder="Password">
+
+      <label for="retypePassword">Retype Your Password:</label>
+      <input type="password" id="retypePassword" name="retypePassword" required placeholder="Retype Password">
+
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+</body>
+</html>

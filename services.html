@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProCare Estates</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+
+        .services-container {
+            display: flex;
+            overflow-x: scroll;
+            scroll-snap-type: x mandatory;
+            gap: 20px;
+            padding: 20px;
+            scroll-behavior: smooth;
+        }
+
+        .service {
+            border: 1px solid #ddd;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            min-width: 300px;
+            scroll-snap-align: start;
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        .service:hover {
+            box-shadow: 0 0 20px rgb(248, 131, 131)
+        }
+
+        li{
+            list-style: none;
+            display: inline;
+        }
+        nav a:hover {
+            color: #f57f7f;
+            /* Add underline animation */
+            transition: color 0.3s, text-decoration 0.3s;
+        }
+
+        nav a::after {
+            content: "";
+            display: block;
+            height: 2px;
+            width: 0;
+            background-color: #333;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            /* Add underline animation */
+            transition: width 0.3s;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>ProCare Estates</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="front page.html">Home</a></li> 
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html" target="_blank">About Us</a></li>
+            <li><a href="login.html" target="_blank">Login</a></li>
+            <li><a href="signup.html" target="_blank">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="services" class="services-container">
+            <div class="service">
+                <h3>Property Maintenance</h3>
+                <a href="https://proptechsolutions.in/services/property-maintenance/" target="_blank"><img width="400" height="400" src="https://www.mashvisor.com/blog/wp-content/uploads/2019/04/The-Ultimate-Guide-to-Rental-Property-Maintenance.jpg" alt=""></a>
+                <p>Ensuring your property is in top-notch condition with regular maintenance checks and repairs.</p>
+            </div>
+
+            <div class="service">
+                <h3>Landscape Design</h3>
+                <a href="https://www.smartdraw.com/landscape-design/" target="_blank"><img width="400" height="400" src="https://st.hzcdn.com/simgs/pictures/landscapes/turning-leaf-drive-project-cedar-springs-landscape-group-img~c9d17c0d0f71efb9_9-8584-1-842d07f.jpg" alt=""></a>
+                <p>Transforming outdoor spaces into beautiful and functional landscapes that enhance property value.</p>
+            </div>
+
+
+            <div class="service">
+                <h3>Emergency Repairs</h3>
+                <a href="https://joboy.in/" target="_blank"><img width="400" height="400" src="https://api.gharpedia.com/wp-content/uploads/2020/10/Maintenance-and-Repair-of-Leased-Property-05-0804010005.jpg" alt=""></a>
+                <p>24/7 response team ready to address urgent repairs and ensure the safety and security of your property.</p>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Smooth scrolling for internal links
+        document.querySelectorAll('a[href^="project.html"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

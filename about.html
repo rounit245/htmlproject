@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            background-image: url("https://storage.pixteller.com/designs/designs-images/2019-03-27/05/simple-background-backgrounds-passion-simple-1-5c9b95bd34713.png");
+        }
+
+        #about {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 40px;
+            box-sizing: border-box;
+        }
+
+        .profile-box {
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .profile-box:hover {
+            transform: scale(1.05);
+        }
+
+        .profile img {
+            width: 100%;
+            height: 500px; /* Adjust the height as needed */
+            object-fit: cover;
+        }
+
+        .details {
+            padding: 20px;
+        }
+
+        .name {
+            font-size: 1.2em;
+            margin-bottom: 8px;
+        }
+
+        .registration {
+            color: #555;
+        }
+
+        /* Alternate the placement of the profile boxes */
+        .profile-box:nth-child(odd) {
+            order: 1;
+        }
+
+        .profile-box:nth-child(even) {
+            order: 2;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1 style="text-decoration: underline; text-align: center; color: blueviolet;">ABOUT US</h1>
+    <section id="about">
+        <div class="profile-box" id="satyam">
+            <div class="details">
+                <div class="name"><b>ROUNIT KUMAR</b></div>
+                <div class="registration" style="color: red;">Registration Number: 12315186</div>
+                <p>This team member tackled in creating and designing: <ul>
+                    <li>FRONT-PAGE</li>
+                    <li>SERVICES PAGE</li>
+                </ul> making sure everything is organized.</p>
+            </div>
+        </div>
+
+        <div class="profile-box" id="goldi">
+            <div class="details">
+                <div class="name"><b>RITIK KUMAR</b></div>
+                <div class="registration" style="color: red;">Registration Number: 123125746</div>
+                <p>This team member tackled in creating: <ul>
+                    <li>LOGIN PAGE</li>
+                    <li>ABOUT PAGE</li>
+                </ul>worked collectively in setting up the different pages.</p>
+            </div>
+        </div>
+
+        <div class="profile-box" id="krishnam">
+            <div class="details">
+                <div class="name"><b>SAURAV SWAMI</b></div>
+                <div class="registration" style="color: red;">Registration Number: 12325484</div>
+                <p>Focused on making pages like:<ul>
+                    <li>SIGN UP PAGE</li>
+                    <li>SERVICES PAGE</li>
+                </ul> This team member is into clear and helpful content to keep things simple.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
